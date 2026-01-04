@@ -1,0 +1,32 @@
+learnphp/
+├─ index.php                    # halaman utama (redirect ke products)
+├─ uploads/                     # simpan gambar produk
+│
+├─ config/                      # pengaturan & koneksi
+│  ├─ config.php
+│  └─ db.php
+│
+├─ helpers/                     # fungsi kecil yang dipakai di banyak halaman
+│  └─ helpers.php
+│
+├─ layouts/                     # template header/footer
+│  ├─ header.php
+│  └─ footer.php
+│
+├─ products/                    # semua fitur CRUD produk
+│  ├─ index.php                 # READ: list produk
+│  ├─ create.php                # CREATE: form tambah
+│  ├─ store.php                 # CREATE: proses simpan
+│  ├─ edit.php                  # UPDATE: form edit
+│  ├─ update.php                # UPDATE: proses update
+│  └─ delete.php                # DELETE: proses hapus
+│
+├─ cart/                        # semua fitur keranjang
+│  ├─ index.php                 # tampil keranjang
+│  ├─ add.php                   # tambah produk ke keranjang
+│  ├─ update.php                # update qty
+│  ├─ remove.php                # hapus 1 item
+│  └─ clear.php                 # kosongkan keranjang
+│
+└─ repositories/                # tempat query database (dipisah)
+   └─ product_repo.php
